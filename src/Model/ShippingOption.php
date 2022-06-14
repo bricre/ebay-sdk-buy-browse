@@ -34,9 +34,9 @@ class ShippingOption extends AbstractModel
 
     /**
      * If the item is being shipped by eBay's <a
-     * href="https://pages.ebay.com/seller-center/shipping/global-shipping-program.html">Global
-     * Shipping Program</a>, this field returns <code>GLOBAL_SHIPPING</code>. Otherwise
-     * this field is null. For implementation help, refer to <a
+     * href="https://pages.ebay.com/seller-center/shipping/global-shipping-program.html
+     * ">Global Shipping Program</a>, this field returns <code>GLOBAL_SHIPPING</code>.
+     * Otherwise this field is null. For implementation help, refer to <a
      * href='https://developer.ebay.com/api-docs/buy/browse/types/gct:FulfilledThroughEnum'>eBay
      * API documentation</a>.
      *
@@ -48,9 +48,9 @@ class ShippingOption extends AbstractModel
      * Indicates if the seller has committed to shipping the item with eBay Guaranteed
      * Delivery. With eBay Guaranteed Delivery, the  seller is committed to getting the
      * line item to the buyer within 4 business days or less. See the <a
-     * href="https://www.ebay.com/help/buying/shipping-delivery/buying-items-ebay-guaranteed-delivery?id=4641">Buying
-     * items with eBay Guaranteed Delivery</a> help topic for more details about eBay
-     * Guaranteed Delivery.
+     * href="https://www.ebay.com/help/buying/shipping-delivery/buying-items-ebay-guaranteed-delivery?id=4641
+     * ">Buying items with eBay Guaranteed Delivery</a> help topic for more details
+     * about eBay Guaranteed Delivery.
      *
      * @var bool
      */
@@ -58,8 +58,8 @@ class ShippingOption extends AbstractModel
 
     /**
      * The <a
-     * href="https://pages.ebay.com/seller-center/shipping/global-shipping-program.html">Global
-     * Shipping Program</a> import charges for this item.
+     * href="https://pages.ebay.com/seller-center/shipping/global-shipping-program.html
+     * ">Global Shipping Program</a> import charges for this item.
      *
      * @var \Ebay\Buy\Browse\Model\ConvertedAmount
      */

@@ -36,7 +36,7 @@ class ItemLocationImpl extends AbstractModel
     public $city = null;
 
     /**
-     * The two-letter <a href="https://www.iso.org/iso-3166-country-codes.html">ISO
+     * The two-letter <a href="https://www.iso.org/iso-3166-country-codes.html ">ISO
      * 3166</a> standard code that indicates the country in which the item is located.
      * For implementation help, refer to <a
      * href='https://developer.ebay.com/api-docs/buy/browse/types/ba:CountryCodeEnum'>eBay

@@ -29,7 +29,7 @@ class Item extends AbstractModel
     /**
      * This indicates if the item is for  adults only. For more information about
      * adult-only items on eBay, see <a
-     * href="https://pages.ebay.com/help/policies/adult-only.html"
+     * href="https://pages.ebay.com/help/policies/adult-only.html "
      * target="_blank">Adult items policy</a> for sellers and <a
      * href="https://www.ebay.com/help/terms-conditions/default/searching-adult-items?id=4661"
      * target="_blank">Adult-Only items on eBay</a> for buyers.
@@ -55,7 +55,7 @@ class Item extends AbstractModel
      * shipped to the buyer. If the buyer returns the item, the authenticator first
      * verifies that it is the same item in the same condition before returning it to
      * the seller.<br /><br /><span class="tablenote"><b> Note: </b>Refer to the <a
-     * href="https://pages.ebay.com/authenticity-guarantee/"
+     * href="https://pages.ebay.com/authenticity-guarantee/ "
      * target="_blank">Authenticity Guarantee</a> page for more information.</span>.
      *
      * @var \Ebay\Buy\Browse\Model\AuthenticityGuaranteeProgram
@@ -96,17 +96,19 @@ class Item extends AbstractModel
 
     /**
      * A comma separated list of all the purchase options available for the item. The
-     * values returned are:  <ul> <li><code>FIXED_PRICE</code> - Indicates the buyer
-     * can purchase the item for a set price using the Buy It Now button. </li>
-     * <li><code>AUCTION</code> - Indicates the buyer can place a bid for the item.
-     * After the first bid is placed, this becomes a live auction item and is the only
-     * buying option for this item.</li>  <li><code>BEST_OFFER</code> - Indicates the
-     * buyer can send the seller a price they're willing to pay for the item. The
-     * seller can accept, reject, or send a counter offer. For more information on how
-     * this works, see <a
+     * values returned are:<ul><li><code>FIXED_PRICE</code> - Indicates the buyer can
+     * purchase the item for a set price using the Buy It Now
+     * button.</li><li><code>AUCTION</code> - Indicates the buyer can place a bid for
+     * the item. After the first bid is placed, this becomes a live auction item and is
+     * the only buying option for this item.</li><li><code>BEST_OFFER</code> -
+     * Indicates the buyer can send the seller a price they're willing to pay for the
+     * item. The seller can accept, reject, or send a counter offer. For more
+     * information on how this works, see <a
      * href="https://www.ebay.com/help/buying/buy-now/making-best-offer?id=4019
-     * ">Making a Best Offer</a>.</li> </ul> Code so that your app gracefully handles
-     * any future changes to this list.
+     * ">Making a Best Offer</a>.</li><li><code>CLASSIFIED_AD</code> - Indicates that
+     * the final sales transaction is to be completed outside of the eBay
+     * environment.</li></ul>Code so that your app gracefully handles any future
+     * changes to this list.
      *
      * @var string[]
      */
@@ -682,8 +684,8 @@ class Item extends AbstractModel
      * top-rated plus item: a  minimum 30-day money-back return policy, shipping the
      * items in 1 business day with tracking provided, and the added comfort of knowing
      * this item is from experienced sellers with the highest buyer ratings. See the <a
-     * href="https://pages.ebay.com/topratedplus/index.html" target="_blank">Top Rated
-     * Plus Items </a> and <a href="https://pages.ebay.com/help/sell/top-rated.html"
+     * href="https://pages.ebay.com/topratedplus/index.html " target="_blank">Top Rated
+     * Plus Items </a> and <a href="https://pages.ebay.com/help/sell/top-rated.html "
      * target="_blank">Becoming a Top Rated Seller and qualifying for Top Rated
      * Plus</a> help topics for more information.
      *

@@ -12,8 +12,9 @@ use OpenAPI\Runtime\AbstractModel;
 class BuyingOptionDistribution extends AbstractModel
 {
     /**
-     * The container that returns the buying option type. This will be AUCTION or
-     * FIXED_PRICE or both. For details, see <a
+     * The container that returns the buying option type. This will be AUCTION,
+     * FIXED_PRICE, CLASSIFIED_AD, or a combination of these options. For details, see
+     * <a
      * href="/api-docs/buy/browse/resources/item_summary/methods/search#response.itemSummaries.buyingOptions">buyingOptions</a>.
      *
      * @var string

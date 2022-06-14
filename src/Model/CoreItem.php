@@ -21,10 +21,10 @@ class CoreItem extends AbstractModel
     /**
      * This indicates if the item is for  adults only. For more information about
      * adult-only items on eBay, see <a
-     * href="https://pages.ebay.com/help/policies/adult-only.html"
+     * href="https://pages.ebay.com/help/policies/adult-only.html "
      * target="_blank">Adult items policy</a> for sellers and <a
-     * href="https://www.ebay.com/help/terms-conditions/default/searching-adult-items?id=4661"
-     * target="_blank">Adult-Only items on eBay</a> for buyers.
+     * href="https://www.ebay.com/help/terms-conditions/default/searching-adult-items?id=4661
+     * " target="_blank">Adult-Only items on eBay</a> for buyers.
      *
      * @var bool
      */
@@ -47,7 +47,7 @@ class CoreItem extends AbstractModel
      * shipped to the buyer. If the buyer returns the item, the authenticator first
      * verifies that it is the same item in the same condition before returning it to
      * the seller.<br /><br /><span class="tablenote"><b> Note: </b>Refer to the <a
-     * href="https://pages.ebay.com/authenticity-guarantee/"
+     * href="https://pages.ebay.com/authenticity-guarantee/ "
      * target="_blank">Authenticity Guarantee</a> page for more information.</span>.
      *
      * @var \Ebay\Buy\Browse\Model\AuthenticityGuaranteeProgram
@@ -88,17 +88,19 @@ class CoreItem extends AbstractModel
 
     /**
      * A comma separated list of all the purchase options available for the item. The
-     * values returned are:  <ul> <li><code>FIXED_PRICE</code> - Indicates the buyer
-     * can purchase the item for a set price using the Buy It Now button. </li>
-     * <li><code>AUCTION</code> - Indicates the buyer can place a bid for the item.
-     * After the first bid is placed, this becomes a live auction item and is the only
-     * buying option for this item.</li>  <li><code>BEST_OFFER</code> - Indicates the
-     * buyer can send the seller a price they're willing to pay for the item. The
-     * seller can accept, reject, or send a counter offer. For more information on how
-     * this works, see <a
+     * values returned are:<ul><li><code>FIXED_PRICE</code> - Indicates the buyer can
+     * purchase the item for a set price using the Buy It Now
+     * button.</li><li><code>AUCTION</code> - Indicates the buyer can place a bid for
+     * the item. After the first bid is placed, this becomes a live auction item and is
+     * the only buying option for this item.</li><li><code>BEST_OFFER</code> -
+     * Indicates the buyer can send the seller a price they're willing to pay for the
+     * item. The seller can accept, reject, or send a counter offer. For more
+     * information on how this works, see <a
      * href="https://www.ebay.com/help/buying/buy-now/making-best-offer?id=4019
-     * ">Making a Best Offer</a>.</li> </ul> Code so that your app gracefully handles
-     * any future changes to this list.
+     * ">Making a Best Offer</a>.</li><li><code>CLASSIFIED_AD</code> - Indicates that
+     * the final sales transaction is to be completed outside of the eBay
+     * environment.</li></ul>Code so that your app gracefully handles any future
+     * changes to this list.
      *
      * @var string[]
      */
@@ -203,13 +205,13 @@ class CoreItem extends AbstractModel
 
     /**
      * This indicates the <a
-     * href="https://en.wikipedia.org/wiki/European_Union_energy_label">European energy
-     * efficiency</a> rating (EEK) of the item. This field is returned only if the
-     * seller specified the energy efficiency rating. <br /><br />The rating is a set
-     * of energy efficiency classes from A to G, where 'A' is the most energy efficient
-     * and 'G' is the least efficient. This rating helps buyers choose between various
-     * models. <br /><br />When the manufacturer's specifications for this item are
-     * available, the link to this information is returned in the <b>
+     * href="https://en.wikipedia.org/wiki/European_Union_energy_label ">European
+     * energy efficiency</a> rating (EEK) of the item. This field is returned only if
+     * the seller specified the energy efficiency rating. <br /><br />The rating is a
+     * set of energy efficiency classes from A to G, where 'A' is the most energy
+     * efficient and 'G' is the least efficient. This rating helps buyers choose
+     * between various models. <br /><br />When the manufacturer's specifications for
+     * this item are available, the link to this information is returned in the <b>
      * productFicheWebUrl</b> field.
      *
      * @var string
@@ -246,8 +248,8 @@ class CoreItem extends AbstractModel
 
     /**
      * The unique Global Trade Item number of the item as defined by <a
-     * href="https://www.gtin.info" target="_blank">https://www.gtin.info</a>. This can
-     * be a UPC (Universal Product Code), EAN (European Article Number), or an ISBN
+     * href="https://www.gtin.info " target="_blank">https://www.gtin.info</a>. This
+     * can be a UPC (Universal Product Code), EAN (European Article Number), or an ISBN
      * (International Standard Book Number) value.
      *
      * @var string
@@ -387,8 +389,8 @@ class CoreItem extends AbstractModel
      * minimum bid price is the same as the starting bid. Otherwise, the minimum bid
      * price is equal to the current bid plus the bid increment.  For details about bid
      * increments, see <a
-     * href="https://www.ebay.com/help/buying/bidding/automatic-bidding?id=4014">Automatic
-     * bidding</a>.
+     * href="https://www.ebay.com/help/buying/bidding/automatic-bidding?id=4014
+     * ">Automatic bidding</a>.
      *
      * @var \Ebay\Buy\Browse\Model\ConvertedAmount
      */
@@ -475,8 +477,8 @@ class CoreItem extends AbstractModel
      * Listing campaign. Promoted Listings are available to Above Standard and Top
      * Rated sellers with recent sales activity.<br /><br />For more information, see
      * <a
-     * href="https://pages.ebay.com/seller-center/listing-and-marketing/promoted-listings.html"
-     * target="_blank">Promoted Listings</a>.
+     * href="https://pages.ebay.com/seller-center/listing-and-marketing/promoted-listings.html
+     * " target="_blank">Promoted Listings</a>.
      *
      * @var bool
      */
@@ -510,7 +512,7 @@ class CoreItem extends AbstractModel
      * Sellers must commit to next-day delivery of those items.<br /><br /><span
      * class="tablenote"><b>Note: </b> eBay Plus is available only to buyers in
      * Germany, Austria, and Australia marketplaces.</span><br /><br />The eBay <a
-     * href="https://pages.ebay.com/authenticity-guarantee/"
+     * href="https://pages.ebay.com/authenticity-guarantee/ "
      * target="_blank">Authenticity Guarantee</a> program enables third-party
      * authenticators to perform authentication verification inspections on items such
      * as watches and sneakers.
@@ -648,8 +650,8 @@ class CoreItem extends AbstractModel
      * top-rated plus item: a  minimum 30-day money-back return policy, shipping the
      * items in 1 business day with tracking provided, and the added comfort of knowing
      * this item is from experienced sellers with the highest buyer ratings. See the <a
-     * href="https://pages.ebay.com/topratedplus/index.html" target="_blank">Top Rated
-     * Plus Items </a> and <a href="https://pages.ebay.com/help/sell/top-rated.html"
+     * href="https://pages.ebay.com/topratedplus/index.html " target="_blank">Top Rated
+     * Plus Items </a> and <a href="https://pages.ebay.com/help/sell/top-rated.html "
      * target="_blank">Becoming a Top Rated Seller and qualifying for Top Rated
      * Plus</a> help topics for more information.
      *

@@ -26,21 +26,21 @@ class ShipToRegion extends AbstractModel
      * <code>CHANNEL_ISLANDS</code>.<br><br>If the <b>regionType</b> value is
      * <code>COUNTRY</code>, the <b>regionId</b> value will be the two-letter code for
      * the country, as defined in the <a
-     * href="https://www.iso.org/iso-3166-country-codes.html" target="_blank">ISO
+     * href="https://www.iso.org/iso-3166-country-codes.html " target="_blank">ISO
      * 3166</a> standard.<br><br>If the <b>regionType</b> value is
      * <code>STATE_OR_PROVINCE</code>, the <b>regionId</b> value will either be the
      * two-letter code for US states and DC (as defined on this <a
-     * href="https://www.ssa.gov/international/coc-docs/states.html"
+     * href="https://www.ssa.gov/international/coc-docs/states.html "
      * target="_blank">Social Security Administration</a> page), or the two-letter code
      * for Canadian provinces (as defined by this <a
-     * href="https://www.canadapost.ca/tools/pg/manual/PGaddress-e.asp?ecid=murl10006450#1442131"
-     * target="_blank">Canada Post</a> page).<br><br>If the <b>regionType</b> value is
-     * <code>COUNTRY_REGION</code>, the <b>regionId</b> value may be one of following:
-     * <code>_AH</code> (if a seller is not willing to ship to Alaska/Hawaii),
-     * <code>_PR</code> (if the seller is not willing to ship to US Protectorates),
-     * <code>_AP</code> (if seller is not willing to ship to a US Army or Fleet Post
-     * Office), and <code>PO_BOX</code> (if the seller is not willing to ship to a Post
-     * Office Box).
+     * href="https://www.canadapost.ca/tools/pg/manual/PGaddress-e.asp?ecid=murl10006450#1442131
+     * " target="_blank">Canada Post</a> page).<br><br>If the <b>regionType</b> value
+     * is <code>COUNTRY_REGION</code>, the <b>regionId</b> value may be one of
+     * following: <code>_AH</code> (if a seller is not willing to ship to
+     * Alaska/Hawaii), <code>_PR</code> (if the seller is not willing to ship to US
+     * Protectorates), <code>_AP</code> (if seller is not willing to ship to a US Army
+     * or Fleet Post Office), and <code>PO_BOX</code> (if the seller is not willing to
+     * ship to a Post Office Box).
      *
      * @var string
      */

@@ -10,7 +10,7 @@ use OpenAPI\Runtime\AbstractModel;
 class VatDetail extends AbstractModel
 {
     /**
-     * The two-letter <a href="https://www.iso.org/iso-3166-country-codes.html"
+     * The two-letter <a href="https://www.iso.org/iso-3166-country-codes.html "
      * target="_blank">ISO 3166</a> standard of the country issuing the seller's VAT
      * (value added tax) ID. VAT is a tax added by some European countries. For
      * implementation help, refer to <a

@@ -47,16 +47,18 @@ class ItemSummary extends AbstractModel
 
     /**
      * A comma separated list of all the purchase options available for the item.
-     * <br><br><b> Values Returned: </b>   <ul> <li><b>FIXED_PRICE</b> - Indicates the
-     * buyer can purchase the item for a set price using the Buy It Now button. </li>
+     * <br><br><b> Values Returned:</b><ul><li><b>FIXED_PRICE</b> - Indicates the buyer
+     * can purchase the item for a set price using the Buy It Now button. </li>
      * <li><b> AUCTION</b> - Indicates the buyer can place a bid for the item. After
      * the first bid is placed, this becomes a live auction item and is the only buying
      * option for this item.</li>  <li><b> BEST_OFFER</b> - Items where the buyer can
      * send the seller a price they're willing to pay for the item. The seller can
      * accept, reject, or send a counter offer. For details about Best Offer, see <a
      * href="https://www.ebay.com/help/selling/listings/selling-buy-now/adding-best-offer-listing?id=4144
-     * " target="_blank">Best Offer</a>.  </li></ul> Code so that your app gracefully
-     * handles any future changes to this list.
+     * " target="_blank">Best Offer</a>.</li><li><b>CLASSIFIED_AD</b> - Indicates that
+     * the final sales transaction is to be completed outside of the eBay
+     * environment.</li></ul> Code so that your app gracefully handles any future
+     * changes to this list.
      *
      * @var string[]
      */
@@ -346,7 +348,7 @@ class ItemSummary extends AbstractModel
      * Sellers must commit to next-day delivery of those items.<br /><br /><span
      * class="tablenote"><b>Note: </b> eBay Plus is available only to buyers in
      * Germany, Austria, and Australia marketplaces.</span><br /><br />The eBay <a
-     * href="https://pages.ebay.com/authenticity-guarantee/"
+     * href="https://pages.ebay.com/authenticity-guarantee/ "
      * target="_blank">Authenticity Guarantee</a> program enables third-party
      * authenticators to perform authentication verification inspections on items such
      * as watches and sneakers.
@@ -409,9 +411,9 @@ class ItemSummary extends AbstractModel
      * a top-rated plus item: a  minimum 30-day money-back return policy, shipping the
      * item in 1 business day with tracking provided, and the added comfort of knowing
      * that this item is from an experienced seller with the highest buyer ratings. See
-     * the <a href="https://pages.ebay.com/topratedplus/index.html" target="_blank">Top
-     * Rated Plus Items </a> and <a
-     * href="https://pages.ebay.com/help/sell/top-rated.html" target="_blank">Becoming
+     * the <a href="https://pages.ebay.com/topratedplus/index.html "
+     * target="_blank">Top Rated Plus Items </a> and <a
+     * href="https://pages.ebay.com/help/sell/top-rated.html " target="_blank">Becoming
      * a Top Rated Seller and qualifying for Top Rated Plus</a> help topics for more
      * information.
      *
@@ -452,11 +454,10 @@ class ItemSummary extends AbstractModel
      * The number of users that have added the item to their watch list.<br /><br
      * /><span class="tablenote"> <strong>Note:</strong> This field is restricted to
      * applications that have been granted permission to access this feature. You must
-     * submit an <a
-     * href="https://developer.ebay.com/my/support/tickets?tab=app-check">App Check
-     * ticket</a> to request this access. In the App Check form, add a note to the
-     * <b>Application Title/Summary</b> and/or <b>Application Details</b> fields that
-     * you want access to Watch Count data in the Browse API.</span>.
+     * submit an <a href="https://developer.ebay.com/my/support/tickets?tab=app-check
+     * ">App Check ticket</a> to request this access. In the App Check form, add a note
+     * to the <b>Application Title/Summary</b> and/or <b>Application Details</b> fields
+     * that you want access to Watch Count data in the Browse API.</span>.
      *
      * @var int
      */

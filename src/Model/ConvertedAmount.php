@@ -12,7 +12,7 @@ use OpenAPI\Runtime\AbstractModel;
 class ConvertedAmount extends AbstractModel
 {
     /**
-     * The three-letter <a href="https://www.iso.org/iso-4217-currency-codes.html"
+     * The three-letter <a href="https://www.iso.org/iso-4217-currency-codes.html "
      * target="_blank">ISO 4217</a> code representing the currency of the amount in the
      * <b> convertedFromValue</b> field. This value is required or returned only if
      * currency conversion/localization is required, and represents the pre-conversion
@@ -36,7 +36,7 @@ class ConvertedAmount extends AbstractModel
     public $convertedFromValue = null;
 
     /**
-     * The three-letter <a href="https://www.iso.org/iso-4217-currency-codes.html"
+     * The three-letter <a href="https://www.iso.org/iso-4217-currency-codes.html "
      * target="_blank">ISO 4217</a> code representing the currency of the amount in the
      * <b> value</b> field. If currency conversion/localization is required, this is
      * the post-conversion currency of the amount in the <b> value</b> field.   <br

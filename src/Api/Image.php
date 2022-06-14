@@ -18,32 +18,32 @@ class Image extends AbstractAPI
      * (ePID), or a combination of these using URI parameters.  <br /><br />To get the
      * Base64 image string, you can use sites such as <a
      * href="https://codebeautify.org/image-to-base64-converter "
-     * target="_blank">https://codebeautify.org/image-to-base64-converter</a>. </p>
-     *  <p>This method also supports the following:  <ul> <li>Filtering by the value of
-     * one or multiple fields, such as listing format, item condition, price range,
+     * target="_blank">https://codebeautify.org/image-to-base64-converter</a>.
+     * </p><p>This method also supports the following:  <ul> <li>Filtering by the value
+     * of one or multiple fields, such as listing format, item condition, price range,
      * location, and more.  For the fields supported by this method, see the <a
-     * href="#uri.filter">filter</a> parameter.</li>   <li>Filtering by item aspects
-     * using the <a href="#uri.aspect_filter">aspect_filter</a> parameter. </li>
-     * </ul></p>  <p>For details and examples of these capabilities, see <a
+     * href="#uri.filter">filter</a> parameter.</li><li>Filtering by item aspects using
+     * the <a href="#uri.aspect_filter">aspect_filter</a> parameter. </li>  </ul></p>
+     * <p>For details and examples of these capabilities, see <a
      * href="/api-docs/buy/static/api-browse.html">Browse API</a> in the Buying
-     * Integration Guide.</p>     <h3><b>Pagination and sort controls</b></h3>
-     * <p>There are pagination controls (<b>limit</b> and <b>offset</b> fields) and <b>
-     * sort</b> query parameters that control/sort the data that is returned. By
-     * default, the results are sorted by &quot;Best Match&quot;. For more information
-     * about  Best Match, see the eBay help page <a
+     * Integration Guide.</p><h3><b>Pagination and sort controls</b></h3>  <p>There are
+     * pagination controls (<b>limit</b> and <b>offset</b> fields) and <b> sort</b>
+     * query parameters that control/sort the data that is returned. By default, the
+     * results are sorted by &quot;Best Match&quot;. For more information about  Best
+     * Match, see the eBay help page <a
      * href="https://pages.ebay.com/help/sell/searchstanding.html "
-     * target="_blank">Best Match</a>.  </p>    <h3><b> URLs for this method</b></h3>
-     *         <p><ul>            <li><b> Production URL: </b>
-     * <code>https://api.ebay.com/buy/browse/v1/item_summary/search_by_image?</code></li>
-     *            <li><b> Sandbox URL:  </b>Due to the data available, this method is
-     * not supported in the eBay Sandbox.  To test your integration, use the Production
-     * URL.</li>           </ul>    </p>              <h3><b> Request headers</b></h3>
-     * This method uses the  <b>X-EBAY-C-ENDUSERCTX</b> request header to support
-     * revenue sharing for eBay Partner Networks and to improve the accuracy of
-     * shipping and delivery time estimations.    For details see, <a
+     * target="_blank">Best Match</a>.  </p>    <h3><b> URLs for this
+     * method</b></h3><p><ul><li><b>Production URL:</b>
+     * <code>https://api.ebay.com/buy/browse/v1/item_summary/search_by_image?</code></li><li><b>
+     * Sandbox URL:  </b>Due to the data available, this method is not supported in the
+     * eBay Sandbox. To test your integration, use the Production
+     * URL.</li></ul></p><h3><b> Request headers</b></h3> This method uses the
+     * <b>X-EBAY-C-ENDUSERCTX</b> request header to support revenue sharing for eBay
+     * Partner Networks and to improve the accuracy of shipping and delivery time
+     * estimations. For details see, <a
      * href="/api-docs/buy/static/api-browse.html#Headers">Request headers</a> in the
-     * Buying Integration Guide.   <h3><b>URL Encoding for Parameters</b></h3>
-     *   <p>Query parameter values need to be URL encoded. For details, see <a
+     * Buying Integration Guide.   <h3><b>URL Encoding for Parameters</b></h3> <p>Query
+     * parameter values need to be URL encoded. For details, see <a
      * href="/api-docs/static/rest-request-components.html#parameters">URL encoding
      * query parameter values</a>.  For readability, code examples in this document
      * have not been URL encoded.</p>  <h3><b>Restrictions </b></h3> <p>This method can
@@ -76,7 +76,7 @@ class Image extends AbstractAPI
      *                                      the result set.<br /> <br />The list of eBay category IDs is not published and
      *                                      category IDs are not the same across all the eBay marketplaces. You can use the
      *                                      following techniques to find a category by site: <ul> <li>Use the <a
-     *                                      href="https://pages.ebay.com/sellerinformation/news/categorychanges.html"
+     *                                      href="https://pages.ebay.com/sellerinformation/news/categorychanges.html "
      *                                      target="_blank">Category Changes page</a>.</li> <li>Use the Taxonomy API. For
      *                                      details see <a href="/api-docs/buy/buy-categories.html">Get Categories for Buy
      *                                      APIs</a>. </li>  <li>Submit the following method to get the <b>
@@ -94,12 +94,12 @@ class Image extends AbstractAPI
      *                                      Employer Identification Number (EIN). In GB, it is the Charity Registration
      *                                      Number (CRN), commonly called "Charity Number".   <ul><li>To find the charities
      *                                      eBay supports, you can search for a charity at <a
-     *                                      href="https://charity.ebay.com/search" target="_blank">Charity Search </a> or go
-     *                                      to <a href="https://www.ebay.com/b/Charity/bn_7114598164"
+     *                                      href="https://charity.ebay.com/search " target="_blank">Charity Search </a> or
+     *                                      go to <a href="https://www.ebay.com/b/Charity/bn_7114598164 "
      *                                      target="_blank">Charity Shop</a>.</li>   <li>To find the charity ID of a
      *                                      specific charity, click on a charity and use the EIN number. For example, the
      *                                      charity ID for  <a
-     *                                      href="https://charity.ebay.com/charity/American-Red-Cross/3843"
+     *                                      href="https://charity.ebay.com/charity/American-Red-Cross/3843 "
      *                                      target="_blank">American Red Cross</a>, is <code>530196605</code>.</li></ul> You
      *                                      can also use any combination of the <code>category_Ids</code> and
      *                                      <code>q</code> fields with a <code>charity_Ids</code> to filter the result set.
@@ -107,42 +107,39 @@ class Image extends AbstractAPI
      *                                      /><b>Restriction: </b> This is supported only on the US and GB marketplaces.<br
      *                                      /><br /><b>Maximum: </b> 20 IDs <br /><br /><b>Required:</b> One ID
      *                                      'fieldgroups'	string	This field is a comma separated list of values that lets
-     *                                      you control what is returned in the response. The default is <b>
-     *                                      MATCHING_ITEMS</b>, which returns the items that match the keyword or category
-     *                                      specified. The other values return data that can be used to create histograms or
-     *                                      provide additional information.  <br /><br /><b> Valid Values: </b> <ul>
-     *                                      <li><b> ASPECT_REFINEMENTS</b> - This returns the <a
+     *                                      you control what is returned in the response. The default is
+     *                                      <b>MATCHING_ITEMS</b>, which returns the items that match the keyword or
+     *                                      category specified. The other values return data that can be used to create
+     *                                      histograms or provide additional information.<br /><br /><b>Valid
+     *                                      Values:</b><ul><li><b>ASPECT_REFINEMENTS</b> - This returns the <a
      *                                      href="#response.refinement.aspectDistributions">aspectDistributions</a>
-     *                                      container, which has the <b> dominantCategoryId</b>, <b> matchCount</b>, and <b>
-     *                                      refinementHref</b> for the various aspects of the items found. For example, if
-     *                                      you searched for 'Mustang', some of the aspect would be <b> Model Year</b>,  <b>
-     *                                      Exterior Color</b>, <b> Vehicle Mileage</b>, etc. <br /> <br /><span
-     *                                      class="tablenote"> <b>Note: </b> ASPECT_REFINEMENTS are category
-     *                                      specific.</span> <br /><br /></li>   <li><b> BUYING_OPTION_REFINEMENTS</b> -
-     *                                      This returns the <a
+     *                                      container, which has the <b>dominantCategoryId</b>, <b>matchCount</b>, and
+     *                                      <b>refinementHref</b> for the various aspects of the items found. For example,
+     *                                      if you searched for 'Mustang', some of the aspect would be <b>Model Year</b>,
+     *                                      <b>Exterior Color</b>, <b>Vehicle Mileage</b>, etc.<br /><br /><span
+     *                                      class="tablenote"><b>Note:</b> ASPECT_REFINEMENTS are category
+     *                                      specific.</span></li><li><b>BUYING_OPTION_REFINEMENTS</b> - This returns the <a
      *                                      href="#response.refinement.buyingOptionDistributions">buyingOptionDistributions</a>
-     *                                      container, which has the <b> matchCount</b> and <b> refinementHref</b> for <b>
-     *                                      AUCTION</b> and <b> FIXED_PRICE</b> (Buy It Now) items. <br /><br /><span
-     *                                      class="tablenote"> <b>Note: </b>Classified items are not supported and only "Buy
-     *                                      It Now" (non-auction) items are returned.</span> <br /><br /> </li>   <li><b>
-     *                                      CATEGORY_REFINEMENTS</b> - This returns the <a
+     *                                      container, which has the <b>matchCount</b> and <b>refinementHref</b> for
+     *                                      <b>AUCTION</b>, <b>FIXED_PRICE</b> (Buy It Now), and <b>CLASSIFIED_AD</b>
+     *                                      items.</li><li><b>CATEGORY_REFINEMENTS</b> - This returns the <a
      *                                      href="#response.refinement.categoryDistributions">categoryDistributions</a>
-     *                                      container, which has the categories that the item is in.   </li>   <li><b>
-     *                                      CONDITION_REFINEMENTS</b> - This returns the <a
+     *                                      container, which has the categories that the item is
+     *                                      in.</li><li><b>CONDITION_REFINEMENTS</b> - This returns the <a
      *                                      href="#response.refinement.conditionDistributions">conditionDistributions</a>
      *                                      container, such as <b> NEW</b>, <b> USED</b>, etc. Within these groups are
-     *                                      multiple states of the condition. For example, <b> New </b> can be New without
-     *                                      tag, New in box, New without box, etc. </li>   <li><b> EXTENDED</b> - This
-     *                                      returns the <a
+     *                                      multiple states of the condition. For example, <b>New</b> can be New without
+     *                                      tag, New in box, New without box, etc.</li><li><b>EXTENDED</b> - This returns
+     *                                      the <a
      *                                      href="/api-docs/buy/browse/resources/item_summary/methods/search#response.itemSummaries.shortDescription">shortDescription</a>
      *                                      field, which provides condition and item aspect information and the <a
      *                                      href="/api-docs/buy/browse/resources/item_summary/methods/search#response.itemSummaries.itemLocation.city">itemLocation.city</a>
-     *                                      field.   </li>  <li><b> MATCHING_ITEMS</b> - This is meant to be used with one
-     *                                      or more of the refinement values above. You use this to return the specified
-     *                                      refinements and all the matching items. </li> <li><b> FULL </b> - This returns
-     *                                      all the refinement containers and all the matching items.</li>   </ul> Code so
-     *                                      that your app gracefully handles any future changes to this list.  <br /><br
-     *                                      /><b>Default: </b> MATCHING_ITEMS
+     *                                      field.</li><li><b>MATCHING_ITEMS</b> - This is meant to be used with one or more
+     *                                      of the refinement values above. You use this to return the specified refinements
+     *                                      and all the matching items.</li><li><b>FULL</b> - This returns all the
+     *                                      refinement containers and all the matching items.</li></ul>Code so that your app
+     *                                      gracefully handles any future changes to this list.<br /><br /><b>Default:</b>
+     *                                      MATCHING_ITEMS
      *                                      'filter'	string	An array of field filters that can be used to limit/customize
      *                                      the result set. <br /><br /><b> For example: </b><br
      *                                      /><code>/buy/browse/v1/item_summary/search?q=shirt&filter=price:[10..50]</code><br
@@ -170,11 +167,12 @@ class Image extends AbstractAPI
      *                                      />You can sort items by price, distance, or listing date. To sort in descending
      *                                      order, insert a hyphen (<code>-</code>) before the name of the sorting option.
      *                                      If no <b>sort</b> parameter is submitted, the result set is sorted by &quot;<a
-     *                                      href="https://pages.ebay.com/help/sell/searchstanding.html" target="_blank">Best
-     *                                      Match</a>&quot;.<br /><br />Here are some examples showing how to use the
-     *                                      <b>sort</b> query parameter:<br /><ul><li><b><code>sort=distance</code></b> -
-     *                                      This sorts by <i>distance</i> in ascending order (shortest distance first). This
-     *                                      sorting option is only applicable if the <a
+     *                                      href="https://pages.ebay.com/help/sell/searchstanding.html "
+     *                                      target="_blank">Best Match</a>&quot;.<br /><br />Here are some examples showing
+     *                                      how to use the <b>sort</b> query parameter:<br
+     *                                      /><ul><li><b><code>sort=distance</code></b> - This sorts by <i>distance</i> in
+     *                                      ascending order (shortest distance first). This sorting option is only
+     *                                      applicable if the <a
      *                                      href="/api-docs/buy/static/ref-buy-browse-filters.html#pickupCountry">pickup</a>
      *                                      filters are used, and only ascending order is
      *                                      supported.</li><li><b><code>sort=-price</code></b> - This sorts by <i>price +

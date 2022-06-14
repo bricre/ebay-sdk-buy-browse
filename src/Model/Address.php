@@ -33,7 +33,7 @@ class Address extends AbstractModel
     public $city = null;
 
     /**
-     * The two-letter <a href="https://www.iso.org/iso-3166-country-codes.html"
+     * The two-letter <a href="https://www.iso.org/iso-3166-country-codes.html "
      * target="_blank">ISO 3166</a> standard of the country of the address. For
      * implementation help, refer to <a
      * href='https://developer.ebay.com/api-docs/buy/browse/types/ba:CountryCodeEnum'>eBay

@@ -211,7 +211,7 @@ class Item extends AbstractAPI
      *                       the <b> legacy_variation_id</b> field and pass in the legacy ID of the specific
      *                       item variation (child ID).</span></li></ul>  Legacy ids are returned by APIs,
      *                       such as the <a
-     *                       href="https://developer.ebay.com/devzone/finding/callref/index.html"
+     *                       href="https://developer.ebay.com/devzone/finding/callref/index.html "
      *                       target="_blank">Finding API</a>.  <br /><br />The following is an example of
      *                       using the value of the <b> ItemID</b> field for a specific item from Finding to
      *                       get the RESTful <b> itemId</b> value. <br /> <br />&nbsp;&nbsp;&nbsp;<code>
@@ -220,13 +220,13 @@ class Item extends AbstractAPI
      *                       'legacy_variation_id'	string	Specifies the legacy item ID of a specific item in
      *                       an item group, such as the red shirt size L. <br /><br />Legacy ids are returned
      *                       by APIs, such as the <a
-     *                       href="https://developer.ebay.com/devzone/finding/callref/index.html"
+     *                       href="https://developer.ebay.com/devzone/finding/callref/index.html "
      *                       target="_blank">Finding API</a>.     <br /><br /><b> Maximum: </b> 1 <br /><b>
      *                       Requirement: </b> You must <b> always</b> pass in the <b> legacy_item_id </b>
      *                       with the <b> legacy_variation_id</b>
      *                       'legacy_variation_sku'	string	Specifics the legacy SKU of the item. SKU are item
      *                       ids created by the seller. <br /><br />Legacy SKUs are returned by eBay the  <a
-     *                       href="https://developer.ebay.com/Devzone/shopping/docs/CallRef/index.html"
+     *                       href="https://developer.ebay.com/Devzone/shopping/docs/CallRef/index.html "
      *                       target="_blank">Shopping API</a>. <br /><br />The following is an example of
      *                       using the value of the <b> ItemID</b> and <b> SKU</b> fields to get the RESTful
      *                       <b> itemId</b> value. <br /> <br />&nbsp;&nbsp;&nbsp;<code>
@@ -251,7 +251,7 @@ class Item extends AbstractAPI
     /**
      * This method retrieves the details of specific items that the buyer needs to make
      * a purchasing decision.  <br><br><span class="tablenote"> <b>Note:</b> This is a
-     * <a href="https://developer.ebay.com/api-docs/static/versioning.html#limited"
+     * <a href="https://developer.ebay.com/api-docs/static/versioning.html#limited "
      * target="_blank"> <img src="/cms/img/docs/partners-api.svg" class="legend-icon
      * partners-icon" title="Limited Release"  alt="Limited Release" />(Limited
      * Release)</a> available only to select Partners. <br><br>For this method, only
