@@ -137,9 +137,9 @@ class Item extends AbstractAPI
      *                        response.</li>  </ul>  </li> </ol></li> </ul>  </ul>    <p><b> Maximum value:
      *                        </b> 1 <br />If more than one values is specified, the first value will be used.
      *
-     * @return ItemModel
+     * @return ItemModel|\OpenAPI\Runtime\UnexpectedResponse
      */
-    public function get(string $item_id, array $queries = []): ItemModel
+    public function get(string $item_id, array $queries = [])
     {
         return $this->request(
         'getItem',
@@ -234,9 +234,9 @@ class Item extends AbstractAPI
      *                       /><br /><b> Maximum: </b> 1 <br /><b> Requirement: </b> You must <b> always</b>
      *                       pass in the <b> legacy_item_id </b> with the <b> legacy_variation_sku</b>
      *
-     * @return ItemModel
+     * @return ItemModel|\OpenAPI\Runtime\UnexpectedResponse
      */
-    public function getByLegacyId(array $queries = []): ItemModel
+    public function getByLegacyId(array $queries = [])
     {
         return $this->request(
         'getItemByLegacyId',
@@ -302,9 +302,9 @@ class Item extends AbstractAPI
      *                       error.<br><br>In a request, multiple item_group_ids can be passed as comma
      *                       separated values.<br><br><b> Maximum allowed itemGroupIDs: </b> 10 <br><br>
      *
-     * @return Items
+     * @return Items|\OpenAPI\Runtime\UnexpectedResponse
      */
-    public function gets(array $queries = []): Items
+    public function gets(array $queries = [])
     {
         return $this->request(
         'getItems',
@@ -355,9 +355,9 @@ class Item extends AbstractAPI
      *                       methods. <br /><br /><b> For Example: </b><code>
      *                       https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=3**********6</code>
      *
-     * @return ItemGroup
+     * @return ItemGroup|\OpenAPI\Runtime\UnexpectedResponse
      */
-    public function getsByGroup(array $queries = []): ItemGroup
+    public function getsByGroup(array $queries = [])
     {
         return $this->request(
         'getItemsByItemGroup',

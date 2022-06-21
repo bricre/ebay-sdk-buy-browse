@@ -101,9 +101,9 @@ class Cart extends AbstractAPI
      * restrictions, see <a href="/api-docs/buy/browse/overview.html#API">API
      * Restrictions</a>.</p>.
      *
-     * @return RemoteShopcartResponse
+     * @return RemoteShopcartResponse|\OpenAPI\Runtime\UnexpectedResponse
      */
-    public function get(): RemoteShopcartResponse
+    public function get()
     {
         return $this->request(
         'getShoppingCart',

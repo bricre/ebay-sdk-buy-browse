@@ -277,9 +277,9 @@ class Summary extends AbstractAPI
      *                       eBay API documentation at
      *                       https://developer.ebay.com/api-docs/buy/browse/types/cos:SortField
      *
-     * @return SearchPagedCollection
+     * @return SearchPagedCollection|\OpenAPI\Runtime\UnexpectedResponse
      */
-    public function search(array $queries = []): SearchPagedCollection
+    public function search(array $queries = [])
     {
         return $this->request(
         'search',
