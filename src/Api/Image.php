@@ -4,6 +4,7 @@ namespace Ebay\Buy\Browse\Api;
 
 use Ebay\Buy\Browse\Model\SearchByImageRequest;
 use Ebay\Buy\Browse\Model\SearchPagedCollection;
+use OpenAPI\Runtime\UnexpectedResponse;
 
 class Image extends AbstractAPI
 {
@@ -191,9 +192,9 @@ class Image extends AbstractAPI
      *                                      eBay API documentation at
      *                                      https://developer.ebay.com/api-docs/buy/browse/types/cos:SortField
      *
-     * @return SearchPagedCollection
+     * @return SearchPagedCollection|UnexpectedResponse
      */
-    public function searchByImage(SearchByImageRequest $Model, array $queries = []): SearchPagedCollection
+    public function searchByImage(SearchByImageRequest $Model, array $queries = [])
     {
         return $this->request(
         'searchByImage',

@@ -6,6 +6,7 @@ use Ebay\Buy\Browse\Model\AddCartItemInput;
 use Ebay\Buy\Browse\Model\RemoteShopcartResponse;
 use Ebay\Buy\Browse\Model\RemoveCartItemInput;
 use Ebay\Buy\Browse\Model\UpdateCartItemInput;
+use OpenAPI\Runtime\UnexpectedResponse;
 
 class Cart extends AbstractAPI
 {
@@ -57,9 +58,9 @@ class Cart extends AbstractAPI
      *
      * @param AddCartItemInput $Model
      *
-     * @return RemoteShopcartResponse
+     * @return RemoteShopcartResponse|UnexpectedResponse
      */
-    public function addItem(AddCartItemInput $Model): RemoteShopcartResponse
+    public function addItem(AddCartItemInput $Model)
     {
         return $this->request(
         'addItem',
@@ -101,7 +102,7 @@ class Cart extends AbstractAPI
      * restrictions, see <a href="/api-docs/buy/browse/overview.html#API">API
      * Restrictions</a>.</p>.
      *
-     * @return RemoteShopcartResponse|\OpenAPI\Runtime\UnexpectedResponse
+     * @return RemoteShopcartResponse|UnexpectedResponse
      */
     public function get()
     {
@@ -149,9 +150,9 @@ class Cart extends AbstractAPI
      *
      * @param RemoveCartItemInput $Model
      *
-     * @return RemoteShopcartResponse
+     * @return RemoteShopcartResponse|UnexpectedResponse
      */
-    public function removeItem(RemoveCartItemInput $Model): RemoteShopcartResponse
+    public function removeItem(RemoveCartItemInput $Model)
     {
         return $this->request(
         'removeItem',
@@ -200,9 +201,9 @@ class Cart extends AbstractAPI
      *
      * @param UpdateCartItemInput $Model
      *
-     * @return RemoteShopcartResponse
+     * @return RemoteShopcartResponse|UnexpectedResponse
      */
-    public function updateQuantity(UpdateCartItemInput $Model): RemoteShopcartResponse
+    public function updateQuantity(UpdateCartItemInput $Model)
     {
         return $this->request(
         'updateQuantity',

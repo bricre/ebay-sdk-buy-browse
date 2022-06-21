@@ -7,6 +7,7 @@ use Ebay\Buy\Browse\Model\CompatibilityResponse;
 use Ebay\Buy\Browse\Model\Item as ItemModel;
 use Ebay\Buy\Browse\Model\ItemGroup;
 use Ebay\Buy\Browse\Model\Items;
+use OpenAPI\Runtime\UnexpectedResponse;
 
 class Item extends AbstractAPI
 {
@@ -137,7 +138,7 @@ class Item extends AbstractAPI
      *                        response.</li>  </ul>  </li> </ol></li> </ul>  </ul>    <p><b> Maximum value:
      *                        </b> 1 <br />If more than one values is specified, the first value will be used.
      *
-     * @return ItemModel|\OpenAPI\Runtime\UnexpectedResponse
+     * @return ItemModel|UnexpectedResponse
      */
     public function get(string $item_id, array $queries = [])
     {
@@ -234,7 +235,7 @@ class Item extends AbstractAPI
      *                       /><br /><b> Maximum: </b> 1 <br /><b> Requirement: </b> You must <b> always</b>
      *                       pass in the <b> legacy_item_id </b> with the <b> legacy_variation_sku</b>
      *
-     * @return ItemModel|\OpenAPI\Runtime\UnexpectedResponse
+     * @return ItemModel|UnexpectedResponse
      */
     public function getByLegacyId(array $queries = [])
     {
@@ -302,7 +303,7 @@ class Item extends AbstractAPI
      *                       error.<br><br>In a request, multiple item_group_ids can be passed as comma
      *                       separated values.<br><br><b> Maximum allowed itemGroupIDs: </b> 10 <br><br>
      *
-     * @return Items|\OpenAPI\Runtime\UnexpectedResponse
+     * @return Items|UnexpectedResponse
      */
     public function gets(array $queries = [])
     {
@@ -355,7 +356,7 @@ class Item extends AbstractAPI
      *                       methods. <br /><br /><b> For Example: </b><code>
      *                       https://api.ebay.com/buy/browse/v1/item/get_items_by_item_group?item_group_id=3**********6</code>
      *
-     * @return ItemGroup|\OpenAPI\Runtime\UnexpectedResponse
+     * @return ItemGroup|UnexpectedResponse
      */
     public function getsByGroup(array $queries = [])
     {
@@ -413,9 +414,9 @@ class Item extends AbstractAPI
      *                                      list of supported sites see, <a
      *                                      href="/api-docs/buy/browse/overview.html#API">API Restrictions</a>.
      *
-     * @return CompatibilityResponse
+     * @return CompatibilityResponse|UnexpectedResponse
      */
-    public function checkCompatibility(string $item_id, CompatibilityPayload $Model, array $headers = []): CompatibilityResponse
+    public function checkCompatibility(string $item_id, CompatibilityPayload $Model, array $headers = [])
     {
         return $this->request(
         'checkCompatibility',

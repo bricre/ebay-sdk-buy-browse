@@ -3,6 +3,7 @@
 namespace Ebay\Buy\Browse\Api;
 
 use Ebay\Buy\Browse\Model\SearchPagedCollection;
+use OpenAPI\Runtime\UnexpectedResponse;
 
 class Summary extends AbstractAPI
 {
@@ -277,7 +278,7 @@ class Summary extends AbstractAPI
      *                       eBay API documentation at
      *                       https://developer.ebay.com/api-docs/buy/browse/types/cos:SortField
      *
-     * @return SearchPagedCollection|\OpenAPI\Runtime\UnexpectedResponse
+     * @return SearchPagedCollection|UnexpectedResponse
      */
     public function search(array $queries = [])
     {
